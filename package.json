@@ -1,0 +1,20 @@
+{
+  "name": "29marchframework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "node utils/envWriter.js",
+    "test": "rm -rf allure-results && playwright test",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.5.2",
+    "allure-playwright": "^3.4.1"
+  }
+}

@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","13743","Add a new employee with dynamic data","chromium","Tue Sep 23 20:34:08 IST 2025","failed","Tue Sep 23 20:34:22 IST 2025","OrangeHRM PIM Tests","PIMAdd.spec.js","",""
+"","13717","Valid user should login successfully","chromium","Tue Sep 23 20:34:08 IST 2025","failed","Tue Sep 23 20:34:22 IST 2025","","Login.spec.js","",""
+"","13723","E2E: Dashboard → PIM → My Info","chromium","Tue Sep 23 20:34:08 IST 2025","failed","Tue Sep 23 20:34:22 IST 2025","","E2ETest.spec.js","",""
+"","13759","Update employee personal info","chromium","Tue Sep 23 20:34:08 IST 2025","failed","Tue Sep 23 20:34:22 IST 2025","OrangeHRM My Info Tests","MyInfo.spec.js","",""
