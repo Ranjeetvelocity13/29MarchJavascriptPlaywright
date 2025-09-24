@@ -68,4 +68,27 @@ export class BasePage {
         });
         Logger.log(`Screenshot captured: screenshots/${fileName}.png`);
     }
+    // Scroll by pixels
+    async scrollBy(x, y) {
+        await this.page.evaluate(([scrollX, scrollY]) => {
+            window.scrollBy(scrollX, scrollY);
+        }, [x, y]);
+    }
+
+    //  Scroll to bottom of page
+    async scrollToBottom() {
+        await this.page.evaluate(() => {
+            window.scrollTo(0, document.body.scrollHeight);
+        });
+    }
+
+    //  Scroll to top of page
+    async scrollToTop() {
+        await this.page.evaluate(() => {
+            window.scrollTo(0, 0);
+        });
+    }
+    async scrollToElement(selector) {
+        await this.page.locator(selector).scrollIntoViewIfNeeded();
+    }
 }

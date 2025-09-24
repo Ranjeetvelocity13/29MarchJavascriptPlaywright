@@ -7,6 +7,8 @@ export class LoginPage extends BasePage {
         this.passwordInput = 'input[name="password"]';
         this.loginButton = 'button[type="submit"]';
         this.errorMessage = 'p.oxd-alert-content-text';
+        this.errorMessage = '//p[@class="oxd-text oxd-text--p oxd-alert-content-text"]';
+        this.userMenu = '//p[@class="oxd-userdropdown-name"]';
     }
 
     async gotoLoginPage(baseURL) {
@@ -21,5 +23,8 @@ export class LoginPage extends BasePage {
 
     async getErrorMessage() {
         return await this.getText(this.errorMessage);
+    }
+    async getLoggedInUser() {
+        return await this.getText(this.userMenu);
     }
 }
